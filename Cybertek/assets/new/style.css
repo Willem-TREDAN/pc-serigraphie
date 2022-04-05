@@ -1,0 +1,146 @@
+main {
+  max-width: 1200px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+main h1 {
+  font-size: 25px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.configurator {
+  display: flex;
+  justify-content: space-between;
+}
+.configurator .computer-wrapper {
+  width: 700px;
+  position: relative;
+}
+.configurator .computer-wrapper .computer img {
+  width: 100%;
+}
+.configurator .computer-wrapper .logos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.configurator .computer-wrapper .logos img {
+  display: none;
+  position: absolute;
+  top: 170px;
+  width: 300px;
+  max-height: 180px;
+  object-fit: contain;
+  left: 200px;
+  opacity: 0.7;
+  cursor: grab;
+}
+.configurator .computer-wrapper .logos img:active {
+  cursor: grabbing;
+}
+.configurator .computer-wrapper .computer-text {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 420px;
+  left: 50%;
+  bottom: 0;
+  opacity: 0.7;
+  height: fit-content;
+  cursor: grab;
+  width: fit-content;
+  transform: translateX(-50%);
+}
+.configurator .computer-wrapper .computer-text.dragged {
+  transform: unset;
+}
+.configurator .computer-wrapper .computer-text:active {
+  cursor: grabbing;
+}
+.configurator .computer-wrapper .computer-text.cursive {
+  font-family: cursive;
+}
+.configurator .computer-wrapper .computer-text.fantasy {
+  font-family: fantasy;
+}
+.configurator .computer-wrapper .computer-text.monospace {
+  font-family: monospace;
+}
+.configurator .configurator-form {
+  width: 380px;
+}
+.configurator .configurator-form .steps {
+  background: white;
+  padding: 20px;
+  box-shadow: 3px 3px 3px #00000007;
+  border-radius: 5px;
+}
+.configurator .configurator-form .steps .step {
+  padding-bottom: 20px;
+}
+.configurator .configurator-form .steps .step__title {
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin: 5px;
+}
+.configurator .configurator-form .steps .step__choices {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.configurator .configurator-form .steps .step__choice {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.configurator .configurator-form .steps .step__choice:hover, .configurator .configurator-form .steps .step__choice.active {
+  border: 2px solid #ffcf00;
+}
+.configurator .configurator-form .steps .step__choice img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.configurator .configurator-form .steps .step__input input {
+  padding: 10px;
+  background-color: #F2F2F2;
+  width: 100%;
+}
+.configurator .configurator-form .steps .step__select select {
+  padding: 10px;
+  background-color: #F2F2F2;
+  width: 100%;
+  border: none;
+}
+.configurator .configurator-form button {
+  padding: 10px 25px;
+  background: #ffcf00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.configurator .configurator-form button:hover {
+  background: black;
+  color: #ffcf00;
+}
+
+.configurator-image {
+  width: 100%;
+  padding: 30px;
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
